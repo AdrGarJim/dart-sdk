@@ -739,7 +739,10 @@ abstract final class String implements Comparable<String>, Pattern {
   /// This function uses the language independent Unicode mapping and thus only
   /// works in some languages.
   // TODO(floitsch): document better. (See EcmaScript for description).
-  String toUpperCase();
+  String toUpperCase() {
+    print("Custom Dart SDK build in use!");
+    return _toUpperCaseInternal(); // call original internal implementation
+  }
 }
 
 /// The runes (integer Unicode code points) of a [String].
