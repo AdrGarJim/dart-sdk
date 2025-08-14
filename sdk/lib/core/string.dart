@@ -741,7 +741,7 @@ abstract final class String implements Comparable<String>, Pattern {
   // TODO(floitsch): document better. (See EcmaScript for description).
   String toUpperCase() {
     print("Custom Dart SDK build in use!");
-    return _toUpperCaseInternal(); // call original internal implementation
+    return this;
   }
 }
 
